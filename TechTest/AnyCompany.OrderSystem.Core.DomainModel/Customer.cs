@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AnyCompany
+namespace AnyCompany.OrderSystem.Core.DomainModel
 {
     public class Customer
     {

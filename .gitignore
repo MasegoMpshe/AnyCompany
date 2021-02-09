@@ -15,3 +15,12 @@
 /TechTest/AnyCompany.Tests/bin/Debug
 /TechTest/AnyCompany.OrderSystem.OrdersAPI/bin/Debug/netcoreapp3.1
 /TechTest/.vs/TechTest/DesignTimeBuild
+/TechTest/AnyCompany/bin/Debug
+/TechTest/AnyCompany.OrderSystem.Application.ApplicationServices/obj
+/TechTest/AnyCompany.OrderSystem.Application.Communication/bin/Debug/netstandard2.0
+/TechTest/AnyCompany.OrderSystem.Application.Communication/obj
+/TechTest/AnyCompany.OrderSystem.Infrastructure.Repositories/bin/Debug/netstandard2.0
+/TechTest/AnyCompany.OrderSystem.Infrastructure.Repositories/obj
+/TechTest/AnyCompany.OrderSystem.Services.ApplicationServices/bin/Debug/netstandard2.0
+/TechTest/AnyCompany.OrderSystem.Services.ApplicationServices/obj
+/TechTest/AnyCompany.OrderSystem.OrdersAPI/AnyCompany.OrderSystem.OrdersAPI.csproj.user
