@@ -3,3 +3,15 @@
 ################################################################################
 
 /TechTest/AnyCompany/obj
+/TechTest/AnyCompany.Tests/obj/Debug/.NETFramework,Version=v4.6.1.AssemblyAttributes.cs
+/TechTest/AnyCompany.Tests/obj/Release/.NETFramework,Version=v4.6.1.AssemblyAttributes.cs
+/.vs/ProjectSettings.json
+/.vs/slnx.sqlite
+/.vs/Investec/v16
+/.vs
+/TechTest/.vs/TechTest/v16
+/TechTest/AnyCompany.OrderSystem.Core.DomainModel/obj
+/TechTest/AnyCompany.OrderSystem.Core.DomainModel/bin/Debug/netstandard2.0
+/TechTest/AnyCompany.Tests/bin/Debug
+/TechTest/AnyCompany.OrderSystem.OrdersAPI/bin/Debug/netcoreapp3.1
+/TechTest/.vs/TechTest/DesignTimeBuild
