@@ -1,7 +1,7 @@
 ﻿
 using MediatR;
 
-namespace Insurance.Client.Application.Communication
+namespace AnyCompany.OrderSystem.Application.Communication
 {
     public interface IMessageRequest<TResponse> : IRequest<TResponse> where TResponse : new()
     {  }

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="DomainEvents\" />
+    <Folder Include="Query\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AnyCompany.OrderSystem.Application.ApplicationServices\AnyCompany.OrderSystem.Application.Tasks.csproj" />
+    <ProjectReference Include="..\AnyCompany.OrderSystem.Application.Communication\AnyCompany.OrderSystem.Application.Communication.csproj" />
+    <ProjectReference Include="..\AnyCompany.OrderSystem.Core.DomainModel\AnyCompany.OrderSystem.Core.DomainModel.csproj" />
+    <ProjectReference Include="..\AnyCompany.OrderSystem.Core.Services.Repositories\AnyCompany.OrderSystem.Core.Services.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -24,3 +24,13 @@
 /TechTest/AnyCompany.OrderSystem.Services.ApplicationServices/bin/Debug/netstandard2.0
 /TechTest/AnyCompany.OrderSystem.Services.ApplicationServices/obj
 /TechTest/AnyCompany.OrderSystem.OrdersAPI/AnyCompany.OrderSystem.OrdersAPI.csproj.user
+/TechTest/AnyCompany.OrderSystem.Application.ApplicationServices/bin/Debug/netstandard2.0
+/TechTest/AnyCompany.OrderSystem.Core.Services.Repositories/bin/Debug/netstandard2.0
+/TechTest/AnyCompany.OrderSystem.Core.Services.Repositories/obj/Debug/netstandard2.0
+/TechTest/AnyCompany.OrderSystem.Core.Services.Repositories/obj
+/TechTest/AnyCompany.OrderSystem.Infrastructure.Mapping/bin/Debug/netstandard2.0
+/TechTest/AnyCompany.OrderSystem.Infrastructure.Mapping/obj/Debug/netstandard2.0
+/TechTest/AnyCompany.OrderSystem.Infrastructure.Mapping/obj
+/TechTest/AnyCompany.OrderSystem.Services.EventHandlers/bin/Debug/netstandard2.0
+/TechTest/AnyCompany.OrderSystem.Services.EventHandlers/obj/Debug/netstandard2.0
+/TechTest/AnyCompany.OrderSystem.Services.EventHandlers/obj

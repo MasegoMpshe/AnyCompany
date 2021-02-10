@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Insurance.Client.Application.Communication
+namespace AnyCompany.OrderSystem.Application.Communication
 {
     public interface ICommand<TRequest, TResponse> : IMessageRequest<TResponse> where TResponse : new()
     {

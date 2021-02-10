@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Insurance.Client.Application.Communication
+namespace AnyCompany.OrderSystem.Application.Communication
 {
     public class MessageService : IMessageService
     {

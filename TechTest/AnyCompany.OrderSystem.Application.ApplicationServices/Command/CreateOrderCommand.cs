@@ -1,6 +1,6 @@
-﻿using AnyCompany.OrderSystem.Core.DomainModel.RequestDTO;
+﻿using AnyCompany.OrderSystem.Application.Communication;
+using AnyCompany.OrderSystem.Core.DomainModel.RequestDTO;
 using AnyCompany.OrderSystem.Core.DomainModel.ResponseDTO;
-using Insurance.Client.Application.Communication;
 using System;
 using System.Collections.Generic;
 using System.Text;
