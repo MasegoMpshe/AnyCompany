@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AnyCompany.OrderSystem.Application.Communication;
+using AnyCompany.OrderSystem.Application.Tasks.Command;
+using AnyCompany.OrderSystem.Core.DomainModel.RequestDTO;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,30 +16,23 @@ namespace AnyCompany.OrderSystem.OrdersAPI.Controllers
     [ApiController]
     public class OrderController : ControllerBase
     {
+        private readonly IMessageService messageService;
 
-        // GET api/<OrderController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        public OrderController(IMessageService messageService)
         {
-            return "value";
+            this.messageService = messageService;
         }
 
-        // POST api/<OrderController>
+
+     
         [HttpPost]
-        public void Post([FromBody] string value)
+        [Route("")]
+        public async Task<IActionResult> CreateOrderAsync([FromBody] CreateOrderRequest createOrderRequest)
         {
+            var results = await messageService.Send(new CreateOrderCommand { CommandData = createOrderRequest });
+            return Ok(results);
         }
 
-        // PUT api/<OrderController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<OrderController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        
     }
 }

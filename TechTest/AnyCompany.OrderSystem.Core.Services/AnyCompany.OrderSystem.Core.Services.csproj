@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Query\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\AnyCompany.OrderSystem.Core.DomainModel\AnyCompany.OrderSystem.Core.DomainModel.csproj" />
   </ItemGroup>
 

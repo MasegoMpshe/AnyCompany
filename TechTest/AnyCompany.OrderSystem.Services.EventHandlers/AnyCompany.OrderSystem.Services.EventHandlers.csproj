@@ -18,6 +18,7 @@
     <ProjectReference Include="..\AnyCompany.OrderSystem.Application.Communication\AnyCompany.OrderSystem.Application.Communication.csproj" />
     <ProjectReference Include="..\AnyCompany.OrderSystem.Core.DomainModel\AnyCompany.OrderSystem.Core.DomainModel.csproj" />
     <ProjectReference Include="..\AnyCompany.OrderSystem.Core.Services.Repositories\AnyCompany.OrderSystem.Core.Services.Repositories.csproj" />
+    <ProjectReference Include="..\AnyCompany.OrderSystem.Core.Services\AnyCompany.OrderSystem.Core.Services.csproj" />
   </ItemGroup>
 
 </Project>

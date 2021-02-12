@@ -7,7 +7,7 @@ using System.Text;
 
 namespace AnyCompany.OrderSystem.Application.Tasks.Command
 {
-    public class CreateOrderCommand :ICommand<CreateOrderRequest, OrderResponse>
+    public class CreateOrderCommand :ICommand<CreateOrderRequest, bool>
     {
         public CreateOrderRequest CommandData { get; set; }
     }

@@ -1,6 +1,5 @@
 D:\Source\Investec\TechTest\AnyCompany.Tests\bin\Debug\AnyCompany.Tests.dll
 D:\Source\Investec\TechTest\AnyCompany.Tests\bin\Debug\AnyCompany.Tests.pdb
-D:\Source\Investec\TechTest\AnyCompany.Tests\obj\Debug\AnyCompany.Tests.csprojAssemblyReference.cache
 D:\Source\Investec\TechTest\AnyCompany.Tests\obj\Debug\AnyCompany.Tests.csproj.CoreCompileInputs.cache
 D:\Source\Investec\TechTest\AnyCompany.Tests\obj\Debug\AnyCompany.Tests.dll
 D:\Source\Investec\TechTest\AnyCompany.Tests\obj\Debug\AnyCompany.Tests.pdb

@@ -1,13 +1,15 @@
 ﻿using AnyCompany.OrderSystem.Core.DomainModel;
+using AnyCompany.OrderSystem.Core.Services;
 using AnyCompany.OrderSystem.Infrastructure.Repositories;
+using System.Threading.Tasks;
 
 namespace AnyCompany.OrderSystem.Services.ApplicationServices
 {
-    public class OrderService
+    public class OrderService: IOrderService
     {
         private readonly OrderRepository orderRepository = new OrderRepository();
 
-        public bool PlaceOrder(Order order, int customerId)
+        public async Task<bool> PlaceOrder(Order order, int customerId)
         {
             Customer customer = CustomerRepository.Load(customerId);
 
@@ -19,9 +21,11 @@ namespace AnyCompany.OrderSystem.Services.ApplicationServices
             else
                 order.VAT = 0;
 
-            orderRepository.Save(order);
+            orderRepository.Add(order);
 
             return true;
         }
+
+
     }
 }

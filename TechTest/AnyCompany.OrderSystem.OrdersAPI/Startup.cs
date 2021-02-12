@@ -1,3 +1,9 @@
+using AnyCompany.OrderSystem.Application.Communication;
+using AnyCompany.OrderSystem.Core.Services;
+using AnyCompany.OrderSystem.Infrastructure.Mapping;
+using AnyCompany.OrderSystem.Services.ApplicationServices;
+using AnyCompany.OrderSystem.Services.EventHandlers.Command;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -6,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +33,16 @@ namespace AnyCompany.OrderSystem.OrdersAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Order System API", Version = "v1" });
+            });
+            services.AddAutoMapper(typeof(MappingProfile));
+            services.AddMediatR(typeof(CreateOrderCommandHandler).Assembly);
+            services.AddScoped<IMessageService, MessageService>();
+            services.AddScoped<IOrderService, OrderService>();
+      
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,7 +52,11 @@ namespace AnyCompany.OrderSystem.OrdersAPI
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint(Configuration["AppSettings:VirtualDirectory"] + "/swagger/v1/swagger.json", "Order System API V1");
+            });
             app.UseHttpsRedirection();
 
             app.UseRouting();

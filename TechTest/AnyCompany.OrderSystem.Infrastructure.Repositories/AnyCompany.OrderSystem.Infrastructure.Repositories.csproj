@@ -5,11 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NEST" Version="7.11.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\AnyCompany.OrderSystem.Core.DomainModel\AnyCompany.OrderSystem.Core.DomainModel.csproj" />
+    <ProjectReference Include="..\AnyCompany.OrderSystem.Core.Services.Repositories\AnyCompany.OrderSystem.Core.Services.Repositories.csproj" />
   </ItemGroup>
 
 </Project>

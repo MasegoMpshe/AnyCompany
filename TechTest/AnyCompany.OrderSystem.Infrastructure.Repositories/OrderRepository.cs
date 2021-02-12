@@ -1,26 +1,26 @@
 ﻿using AnyCompany.OrderSystem.Core.DomainModel;
+using AnyCompany.OrderSystem.Core.Services.Repositories;
+using AnyCompany.OrderSystem.Core.Services.Repositories.Command;
+using Nest;
 using System.Data.SqlClient;
+using System.Threading.Tasks;
 
 namespace AnyCompany.OrderSystem.Infrastructure.Repositories
 {
-    public class OrderRepository
+    public class OrderRepository: IOrderRepository
     {
         private static string ConnectionString = @"Data Source=(local);Database=Orders;User Id=admin;Password=password;";
 
-        public void Save(Order order)
+        public void Add(Order item)
         {
-            SqlConnection connection = new SqlConnection(ConnectionString);
-            connection.Open();
+            throw new System.NotImplementedException();
+        }
 
-            SqlCommand command = new SqlCommand("INSERT INTO Orders VALUES (@OrderId, @Amount, @VAT)", connection);
+       
 
-            command.Parameters.AddWithValue("@OrderId", order.OrderId);
-            command.Parameters.AddWithValue("@Amount", order.Amount);
-            command.Parameters.AddWithValue("@VAT", order.VAT);
-
-            command.ExecuteNonQuery();
-
-            connection.Close();
+        public Task Save()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

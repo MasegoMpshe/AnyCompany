@@ -4,5 +4,18 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AnyCompany.OrderSystem.Core.Services\AnyCompany.OrderSystem.Core.Services.csproj" />
+    <ProjectReference Include="..\AnyCompany.OrderSystem.Infrastructure.Mapping\AnyCompany.OrderSystem.Infrastructure.Mapping.csproj" />
+    <ProjectReference Include="..\AnyCompany.OrderSystem.Services.ApplicationServices\AnyCompany.OrderSystem.Services.ApplicationServices.csproj" />
+    <ProjectReference Include="..\AnyCompany.OrderSystem.Services.EventHandlers\AnyCompany.OrderSystem.Services.EventHandlers.csproj" />
+  </ItemGroup>
+
 
 </Project>

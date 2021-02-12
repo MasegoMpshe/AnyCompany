@@ -6,5 +6,6 @@ namespace AnyCompany.OrderSystem.Core.DomainModel.ResponseDTO
 {
     public class OrderResponse
     {
+        bool success;
     }
 }
